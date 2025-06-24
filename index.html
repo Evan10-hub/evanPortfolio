@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曹传敬_UI设计作品集_15217199403</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #282828;
+            /* 网页背景色为灰色 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #282828;
+            /* 容器背景色为灰色 */
+            padding: 0;
+            margin: 0 auto;
+            width: 90%;
+            /* 默认宽度为 */
+        }
+
+        img {
+            margin: 0;
+            margin-bottom: 4px;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 1px;
+            box-sizing: border-box;
+            /* 修复边框计算问题 */
+        }
+
+        @media only screen and (max-width: 1366px) {
+            .container {
+                width: 100%;
+                /* 在小于1366px时宽度为100% */
+            }
+
+            /* 新增：小屏幕隐藏导航栏 */
+            #nav-sidebar {
+                display: none;
+            }
+        }
+
+        /* 新增手机屏幕媒体查询 */
+        @media only screen and (max-width: 768px) {
+            img {
+                margin-bottom: 2px;
+                /* 手机屏幕减小间距 */
+            }
+        }
+
+        /* 左侧导航栏样式（固定左下角，始终显示） */
+        #nav-sidebar {
+            position: fixed;
+            right: 4px;
+            /* 固定左侧距离 */
+            top: 50%;
+            /* 顶部居中 */
+            transform: translateY(-50%);
+            /* 垂直方向上移50%自身高度 */
+            width: auto;
+            height: auto;
+            background-color: rgba(40, 40, 40, 0.95);
+            color: white;
+            padding: 2px;
+            border-radius: 4px;
+            z-index: 1000;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            /* 移除列表默认边距 */
+        }
+
+        .nav-item {
+            padding: 6px 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0.8em;
+        }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* 让“目录”居中显示且字体加粗 */
+        .nav-list li:first-child {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* 封面容器（相对定位，作为定位参考） */
+        .cover-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* 封面底图（1440×814，自适应宽度） */
+        .cover-main {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 右下角动态GIF（561×624，自适应缩放） */
+        .corner-gif {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 39%;
+            /* 固定比例，移除重复的媒体查询 */
+            height: auto;
+            pointer-events: none;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 左侧导航栏（始终显示） -->
+    <aside id="nav-sidebar">
+        <ul class="nav-list">
+            <li class="nav-item">-目录-</li>
+            <li class="nav-item" data-target="ui-design">🖥️ 界面</li>
+            <li class="nav-item" data-target="website-design">🌐 网站</li>
+            <li class="nav-item" data-target="operation-design">📊 运营</li>
+            <li class="nav-item" data-target="other-design">🎨 其他</li>
+        </ul>
+    </aside>
+
+    <div class="container">
+        <!-- 封面模块 -->
+        <div class="cover-container">
+            <img src="images/0fm.jpg" alt="封面底图" class="cover-main">
+            <!-- 右下角动态GIF-->
+            <img src="images/fmjGIF.gif" alt="动态角落图" class="corner-gif">
+        </div>
+
+        <img src="images/1gzjl.jpg" alt="工作经历" loading="lazy">
+        <img src="images/2mulu.jpg" alt="目录" loading="lazy">
+
+        <!-- 界面UI模块 -->
+        <img src="images/3jmUI-0.jpg" alt="界面UI – 0" loading="lazy" id="ui-design">
+        <img src="images/3jmUI-1gif.gif" alt="GIF界面UI – 1" loading="lazy">
+        <img src="images/3jmUI-2.jpg" alt="界面UI – 2" loading="lazy">
+        <img src="images/3jmUI-3.jpg" alt="界面UI – 3" loading="lazy">
+        <img src="images/3jmUI-4.jpg" alt="界面UI – 4" loading="lazy">
+        <img src="images/3jmUI-5.jpg" alt="界面UI – 5" loading="lazy">
+        <img src="images/3jmUI-6.jpg" alt="界面UI – 6" loading="lazy">
+        <img src="images/3jmUI-7.jpg" alt="界面UI – 7" loading="lazy">
+        <img src="images/3jmUI-8.jpg" alt="界面UI – 8" loading="lazy">
+        <img src="images/3jmUI-9.jpg" alt="界面UI – 9" loading="lazy">
+        <img src="images/3jmUI-10.jpg" alt="界面UI – 10" loading="lazy">
+        <img src="images/3jmUI-11.jpg" alt="界面UI – 11" loading="lazy">
+        <img src="images/3jmUI-12.jpg" alt="界面UI – 12" loading="lazy">
+        <img src="images/3jmUI-13.jpg" alt="界面UI – 13" loading="lazy">
+        <img src="images/3jmUI-14.jpg" alt="界面UI – 14" loading="lazy">
+        <img src="images/3jmUI-15.jpg" alt="界面UI – 15" loading="lazy">
+        <img src="images/3jmUI-16.jpg" alt="界面UI – 16" loading="lazy">
+        <img src="images/3jmUI-17.jpg" alt="界面UI – 17" loading="lazy">
+        <img src="images/3jmUI-18.jpg" alt="界面UI – 18" loading="lazy">
+        <img src="images/3jmUI-19.jpg" alt="界面UI – 19" loading="lazy">
+        <img src="images/3jmUI-20.jpg" alt="界面UI – 20" loading="lazy">
+        <img src="images/3jmUI-21.jpg" alt="界面UI – 21" loading="lazy">
+        <img src="images/3jmUI-22.jpg" alt="界面UI – 22" loading="lazy">
+        <img src="images/3jmUI-23.jpg" alt="界面UI – 23" loading="lazy">
+        <img src="images/3jmUI-24.jpg" alt="界面UI – 24" loading="lazy">
+        <img src="images/3jmUI-25.jpg" alt="界面UI – 25" loading="lazy">
+        <img src="images/3jmUI-26.jpg" alt="界面UI – 26" loading="lazy">
+        <img src="images/3jmUI-27.jpg" alt="界面UI – 27" loading="lazy">
+        <img src="images/3jmUI-28.jpg" alt="界面UI – 28" loading="lazy">
+        <img src="images/3jmUI-29.jpg" alt="界面UI – 29" loading="lazy">
+        <img src="images/3jmUI-30.jpg" alt="界面UI – 30" loading="lazy">
+        <img src="images/3jmUI-31.jpg" alt="界面UI – 31" loading="lazy">
+
+        <!-- 网站设计模块 -->
+        <img src="images/4mulu-wz.jpg" alt="分目录–网站设计" loading="lazy" id="website-design">
+        <img src="images/4wzsj-1.jpg" alt="网站设计 – 1" loading="lazy">
+        <img src="images/4wzsj-2.jpg" alt="网站设计 – 2" loading="lazy">
+        <img src="images/4wzsj-3.jpg" alt="网站设计 – 3" loading="lazy">
+        <img src="images/4wzsj-4.jpg" alt="网站设计 – 4" loading="lazy">
+        <img src="images/4wzsj-5.jpg" alt="网站设计 – 5" loading="lazy">
+        <img src="images/4wzsj-6.jpg" alt="网站设计 – 6" loading="lazy">
+        <img src="images/4wzsj-7.jpg" alt="网站设计 – 7" loading="lazy">
+        <img src="images/4wzsj-8.jpg" alt="网站设计 – 8" loading="lazy">
+        <img src="images/4wzsj-9.jpg" alt="网站设计 – 9" loading="lazy">
+
+        <!-- 运营设计模块 -->
+        <img src="images/5mulu-yy.jpg" alt="分目录– 运营设计" loading="lazy" id="operation-design">
+        <img src="images/5yysj-1.jpg" alt="运营设计– 1" loading="lazy">
+        <img src="images/5yysj-3.jpg" alt="运营设计– 3" loading="lazy">
+        <img src="images/5yysj-4.jpg" alt="运营设计– 4" loading="lazy">
+        <img src="images/5yysj-5.jpg" alt="运营设计– 5" loading="lazy">
+        <img src="images/5yysj-6.jpg" alt="运营设计– 6" loading="lazy">
+        <img src="images/5yysj-7.jpg" alt="运营设计– 7" loading="lazy">
+        <img src="images/5yysj-8.jpg" alt="运营设计– 8" loading="lazy">
+        <img src="images/5yysj-9.jpg" alt="运营设计– 9" loading="lazy">
+        <img src="images/5yysj-10.jpg" alt="运营设计– 10" loading="lazy">
+
+        <!-- 其他设计模块 -->
+        <img src="images/6mulu-qt.jpg" alt="分目录–其他设计" loading="lazy" id="other-design">
+        <img src="images/6qtsj-1.jpg" alt="其他设计 – 1" loading="lazy">
+        <img src="images/6qtsj-2.jpg" alt="其他设计 – 2" loading="lazy">
+        <img src="images/6qtsj-3.jpg" alt="其他设计 – 3" loading="lazy">
+        <img src="images/6qtsj-4.jpg" alt="其他设计 – 4" loading="lazy">
+
+        <a href="https://k0p38l6x8l.feishu.cn/file/EAOnbA1RGoQwsSxu9HxcJiDunvg" target="_blank">
+            <img src="images/6qtsj-8.jpg" alt="其他设计 – 8" loading="lazy">
+        </a>
+
+        <a href="https://k0p38l6x8l.feishu.cn/file/LfQ5bM6wioDIaqxqaTncPytfnHd" target="_blank">
+            <img src="images/6qtsj-9.jpg" alt="其他设计 – 9" loading="lazy">
+        </a>
+
+        <!-- 封底 -->
+        <img src="images/7fd.jpg" alt="封底" loading="lazy">
+    </div>
+
+    <script>
+        // 导航栏点击逻辑
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const targetId = item.dataset.target;
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                        inline: 'nearest'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
